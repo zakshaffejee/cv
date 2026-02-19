@@ -1,78 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Zakiyyah Haffejee</title>
+    <meta charset="UTF-8">
+    <title>Zakiyyah Haffejee | Pharmacist</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-<style>
-:root {
-  --dark: #060D0C;
-  --deep: #3E5954;
-  --sage: #758886;
-  --stone: #C6C2BB;
-  --light: #F0EDE5;
-}
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Inter', sans-serif;
-}
+<body>
 
-body {
-  background: var(--light);
-  color: var(--dark);
-  overflow-x: hidden;
-}
+<!-- ================= NAVIGATION ================= -->
 
-nav {
-  position: fixed;
-  width: 100%;
-  padding: 20px 8%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: rgba(240,237,229,0.85);
-  backdrop-filter: blur(8px);
-  z-index: 1000;
-}
+<nav>
+    <div><strong>Zakiyyah Haffejee</strong></div>
+    <div>
+        <a href="index.html">Home</a>
+        <a href="experience.html">Experience</a>
+        <a href="skills.html">Skills</a>
+        <a href="contact.html">Contact</a>
+    </div>
+</nav>
 
-nav a {
-  text-decoration: none;
-  color: var(--deep);
-  margin-left: 25px;
-  font-weight: 500;
-  transition: 0.3s ease;
-}
+<!-- ================= HERO SECTION ================= -->
 
-nav a:hover {
-  color: var(--dark);
-}
+<section class="hero">
+    <div>
+        <h1>Pharmacist Intern</h1>
+        <p>
+            Structured. Analytical. Creative.
+            A developing healthcare professional with strong clinical grounding,
+            operational experience, and a growing interest in pharmaceutical manufacturing and systems optimisation.
+        </p>
+    </div>
+</section>
 
-.hero {
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  padding: 0 8%;
-  position: relative;
-  overflow: hidden;
-}
+<!-- ================= ABOUT SECTION ================= -->
 
-.hero-content {
-  max-width: 650px;
-  position: relative;
-  z-index: 2;
-}
+<section>
+    <h2 class="section-title">About Me</h2>
 
-.hero h1 {
-  font-size: 3rem;
-  font-weight: 600;
-  color: var(--dark);
-}
+    <p style="max-width: 700px;">
+        I am a pharmacist intern with experience in hospital operations,
+        stock management, dispensing, and multidisciplinary collaboration.
+        My approach combines structure and creativity — ensuring systems work
+        efficiently while maintaining patient-centred care.
+    </p>
 
-.hero h2 {
-  font-weight: 400
+    <p style="margin-top: 20px; max-width: 700px;">
+        I am particularly interested in pharmaceutical manufacturing,
+        operational optimisation, and quality-driven environments where
+        precision and process matter.
+    </p>
+</section>
+
+<!-- ================= QUICK OVERVIEW ================= -->
+
+<section>
+    <h2 class="section-title">Core Focus Areas</h2>
+
+    <div class="skills-grid">
+        <div class="skill-card">
+            <h3>Clinical & Hospital Practice</h3>
+            <p>
+                Dispensing, schedule drug management,
+                medication review, and patient-centred pharmaceutical care.
+            </p>
+        </div>
+
+        <div class="skill-card">
+            <h3>Operations & Systems</h3>
+            <p>
+                Inventory control, stock reconciliation,
+                workflow improvement, and pharmacy system utilisation.
+            </p>
+        </div>
+
+        <div class="skill-card">
+            <h3>Manufacturing Interest</h3>
+            <p>
+                Strong curiosity toward pharmaceutical production,
+                quality control, regulatory frameworks,
+                and process optimisation.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+    © 2026 Zakiyyah Haffejee | Built with structure & intention
+</footer>
+
+</body>
+</html>
