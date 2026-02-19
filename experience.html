@@ -113,3 +113,164 @@ nav a:hover {
   margin-top: 10px;
   color: var(--sage);
   line-height: 1.8;
+}
+
+ul {
+  margin-left: 20px;
+}
+
+footer {
+  text-align: center;
+  padding: 60px;
+  color: var(--sage);
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+  <div><strong>Zakiyyah Haffejee</strong></div>
+  <div>
+    <a href="index.html">Home</a>
+    <a href="experience.html">Experience</a>
+  </div>
+</nav>
+
+<div class="page-header">
+  <h1>Professional Experience</h1>
+</div>
+
+<div class="timeline">
+
+  <!-- LENMED -->
+  <div class="timeline-item">
+    <div class="accordion">
+      Lenmed Mooimed Private Hospital | Pharmacist Intern (2025–Current)
+    </div>
+    <div class="panel">
+      <div class="panel-content">
+
+        <h3>Governance & Regulatory Oversight</h3>
+        <ul>
+          <li>Managed Schedule 5 & 6 medicines in accordance with regulatory standards.</li>
+          <li>Conducted regular controlled drug audits to ensure compliance and documentation integrity.</li>
+          <li>Executed medication destruction in alignment with SAPC requirements.</li>
+          <li>Oversaw emergency cupboard governance and controlled drug record maintenance.</li>
+        </ul>
+
+        <h3>Operational & Inventory Systems</h3>
+        <ul>
+          <li>Monitored refrigerator temperatures and ensured strict cold chain compliance.</li>
+          <li>Investigated stock discrepancies to enhance inventory accuracy.</li>
+          <li>Conducted ward stock audits and facilitated stock optimisation.</li>
+          <li>Captured invoices and processed credits to maintain financial documentation accuracy.</li>
+        </ul>
+
+        <h3>Clinical Integration & Stewardship</h3>
+        <ul>
+          <li>Evaluated medication orders for appropriate dosage, frequency, and duration.</li>
+          <li>Facilitated antimicrobial stewardship initiatives to promote responsible antibiotic use.</li>
+          <li>Delivered hang-time compliance training for IV antibiotic administration.</li>
+          <li>Participated in infection prevention and control committees.</li>
+        </ul>
+
+        <h3>Public Health & Campaign Leadership</h3>
+        <ul>
+          <li>Spearheaded antimicrobial stewardship awareness campaign (2025).</li>
+          <li>Organised Hand Hygiene Day in collaboration with IPC committee.</li>
+          <li>Supported breast cancer and diabetes awareness initiatives.</li>
+        </ul>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- NWU -->
+  <div class="timeline-item">
+    <div class="accordion">
+      NWU Manufacturing Practical | Assistant Division Manager (2024)
+    </div>
+    <div class="panel">
+      <div class="panel-content">
+
+        <h3>GMP & Production Exposure</h3>
+        <ul>
+          <li>Participated in the production of Furosemide 40mg tablets under GMP regulations.</li>
+          <li>Ensured adherence to legislative and compliance requirements.</li>
+          <li>Monitored inventory throughout the production process.</li>
+        </ul>
+
+        <h3>Leadership & Coordination</h3>
+        <ul>
+          <li>Served as assistant division manager within a structured student manufacturing team.</li>
+          <li>Facilitated conflict resolution and workflow coordination.</li>
+          <li>Maintained compliance-focused oversight during manufacturing operations.</li>
+        </ul>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- ROTATIONS -->
+  <div class="timeline-item">
+    <div class="accordion">
+      Clinical & Retail Rotations (2021–2024)
+    </div>
+    <div class="panel">
+      <div class="panel-content">
+
+        <h3>Clinical Foundations</h3>
+        <ul>
+          <li>Conducted medication reconciliation and patient counselling.</li>
+          <li>Evaluated prescriptions for validity and potential interactions.</li>
+          <li>Participated in ward rounds and inspections.</li>
+        </ul>
+
+        <h3>Operational Exposure</h3>
+        <ul>
+          <li>Managed stock receiving and inventory organisation.</li>
+          <li>Ensured prescription accuracy prior to dispensing.</li>
+          <li>Supported cold chain management in clinical settings.</li>
+        </ul>
+
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<footer>
+  © 2026 Zakiyyah Haffejee
+</footer>
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+for (var i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    }
+  });
+}
+</script>
+<script>
+document.querySelectorAll(".accordion-header").forEach(header => {
+  header.addEventListener("click", () => {
+    const content = header.nextElementSibling;
+
+    if (content.style.maxHeight) {
+      content.style.maxHeight = null;
+      content.classList.remove("open");
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+      content.classList.add("open");
+    }
+  });
+});
+</script>
+</body>
+</html>
