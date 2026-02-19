@@ -1,1 +1,112 @@
+:root {
+  --primary: #2A4D88;
+  --soft-blue: #7C94B8;
+  --light-bg: #D9D9D8;
+  --muted: #B1BBC8;
+  --text: #1f1f1f;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  background: var(--light-bg);
+  color: var(--text);
+  line-height: 1.7;
+}
+
+nav {
+  background: white;
+  padding: 20px 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--primary);
+  margin-left: 25px;
+  font-weight: 500;
+}
+
+nav a:hover {
+  color: var(--soft-blue);
+}
+
+section {
+  padding: 80px 10%;
+}
+
+.hero {
+  background: white;
+  text-align: center;
+  padding: 120px 10%;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  color: var(--primary);
+}
+
+.hero p {
+  max-width: 700px;
+  margin: 20px auto;
+}
+
+.button {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 12px 30px;
+  background: var(--primary);
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: 0.3s ease;
+}
+
+.button:hover {
+  background: var(--soft-blue);
+}
+
+.timeline {
+  border-left: 3px solid var(--primary);
+  padding-left: 30px;
+}
+
+.timeline-item {
+  margin-bottom: 40px;
+}
+
+.accordion {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.accordion:hover {
+  background: var(--muted);
+}
+
+.panel {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease;
+  background: #ffffff;
+  padding: 0 20px;
+  border-radius: 0 0 8px 8px;
+}
+
+footer {
+  text-align: center;
+  padding: 40px;
+  background: white;
+  color: var(--primary);
+}
 
