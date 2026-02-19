@@ -1,111 +1,309 @@
+/* =========================
+   ROOT VARIABLES
+========================= */
+
 :root {
-  --primary: #2A4D88;
-  --soft-blue: #7C94B8;
-  --light-bg: #D9D9D8;
-  --muted: #B1BBC8;
-  --text: #1f1f1f;
+  --dark: #060D0C;
+  --primary: #3E5954;
+  --muted: #758886;
+  --neutral: #C6C2BB;
+  --light: #F0EDE5;
 }
+
+/* =========================
+   GLOBAL STYLES
+========================= */
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Inter', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--light-bg);
-  color: var(--text);
+  font-family: 'Inter', sans-serif;
+  background-color: var(--light);
+  color: var(--dark);
   line-height: 1.7;
 }
 
+/* =========================
+   NAVIGATION
+========================= */
+
 nav {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background: rgba(240, 237, 229, 0.95);
+  backdrop-filter: blur(6px);
+  display: flex;
+  justify-content: space-between;
+  padding: 18px 10%;
+  z-index: 1000;
+  border-bottom: 1px solid var(--neutral);
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--dark);
+  font-weight: 500;
+  margin-left: 30px;
+  transition: 0.3s ease;
+}
+
+nav a:hover {
+  color: var(--primary);
+}
+
+/* =========================
+   HERO SECTION (PARALLAX)
+========================= */
+
+.hero {
+  height: 100vh;
+  background: linear-gradient(rgba(6,13,12,0.6), rgba(6,13,12,0.6)),
+              url('hero-bg.jpg') center/cover fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 20px;
+  color: var(--light);
+}
+
+.hero h1 {
+  font-size: 3rem;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin: auto;
+  opacity: 0.9;
+}
+
+/* =========================
+   SECTION STYLING
+========================= */
+
+section {
+  padding: 100px 10%;
+}
+
+.section-title {
+  font-size: 2rem;
+  margin-bottom: 40px;
+  color: var(--primary);
+  position: relative;
+}
+
+.section-title::after {
+  content: "";
+  width: 60px;
+  height: 3px;
+  background: var(--primary);
+  display: block;
+  margin-top: 10px;
+}
+
+/* =========================
+   EXPERIENCE (ACCORDION)
+========================= */
+
+.accordion-item {
+  margin-bottom: 30px;
+  border: 1px solid var(--neutral);
+  border-radius: 8px;
+  overflow: hidden;
   background: white;
-  padding: 20px 10%;
+  transition: 0.3s ease;
+}
+
+.accordion-header {
+  padding: 20px;
+  cursor: pointer;
+  background: var(--primary);
+  color: white;
+  font-weight: 600;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-nav a {
-  text-decoration: none;
-  color: var(--primary);
-  margin-left: 25px;
-  font-weight: 500;
-}
-
-nav a:hover {
-  color: var(--soft-blue);
-}
-
-section {
-  padding: 80px 10%;
-}
-
-.hero {
-  background: white;
-  text-align: center;
-  padding: 120px 10%;
-}
-
-.hero h1 {
-  font-size: 2.5rem;
-  color: var(--primary);
-}
-
-.hero p {
-  max-width: 700px;
-  margin: 20px auto;
-}
-
-.button {
-  display: inline-block;
-  margin-top: 30px;
-  padding: 12px 30px;
-  background: var(--primary);
-  color: white;
-  text-decoration: none;
-  border-radius: 6px;
-  transition: 0.3s ease;
-}
-
-.button:hover {
-  background: var(--soft-blue);
-}
-
-.timeline {
-  border-left: 3px solid var(--primary);
-  padding-left: 30px;
-}
-
-.timeline-item {
-  margin-bottom: 40px;
-}
-
-.accordion {
-  background: white;
-  padding: 20px;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: 0.3s ease;
-}
-
-.accordion:hover {
+.accordion-header:hover {
   background: var(--muted);
 }
 
-.panel {
+.accordion-content {
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.5s ease;
-  background: #ffffff;
+  transition: max-height 0.6s ease, padding 0.4s ease;
+  background: var(--light);
   padding: 0 20px;
-  border-radius: 0 0 8px 8px;
 }
+
+.accordion-content.open {
+  padding: 25px 20px;
+}
+
+.accordion-content h4 {
+  margin-top: 20px;
+  color: var(--primary);
+}
+
+.accordion-content ul {
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+/* =========================
+   SKILLS SECTION
+========================= */
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.skill-card {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  border: 1px solid var(--neutral);
+  transition: 0.3s ease;
+}
+
+.skill-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+}
+
+.skill-card h3 {
+  color: var(--primary);
+  margin-bottom: 15px;
+}
+
+.skill-card ul {
+  list-style: none;
+}
+
+.skill-card ul li {
+  margin-bottom: 8px;
+  position: relative;
+  padding-left: 15px;
+}
+
+.skill-card ul li::before {
+  content: "•";
+  color: var(--muted);
+  position: absolute;
+  left: 0;
+}
+
+/* =========================
+   TIMELINE STYLE OPTION
+========================= */
+
+.timeline {
+  position: relative;
+  padding-left: 40px;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 15px;
+  top: 0;
+  height: 100%;
+  width: 3px;
+  background: var(--primary);
+}
+
+.timeline-item {
+  margin-bottom: 50px;
+  position: relative;
+}
+
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  left: -28px;
+  top: 5px;
+  width: 15px;
+  height: 15px;
+  background: var(--primary);
+  border-radius: 50%;
+}
+
+/* =========================
+   CONTACT SECTION
+========================= */
+
+.contact {
+  text-align: center;
+  background: var(--dark);
+  color: var(--light);
+}
+
+.contact a {
+  color: var(--neutral);
+  text-decoration: none;
+}
+
+.contact a:hover {
+  color: var(--light);
+}
+
+/* =========================
+   FOOTER
+========================= */
 
 footer {
   text-align: center;
-  padding: 40px;
-  background: white;
-  color: var(--primary);
+  padding: 20px;
+  background: var(--dark);
+  color: var(--neutral);
+  font-size: 0.9rem;
+}
+
+/* =========================
+   ANIMATIONS
+========================= */
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: 0.8s ease;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 768px) {
+
+  nav {
+    padding: 15px 5%;
+  }
+
+  section {
+    padding: 80px 5%;
+  }
+
+  .hero h1 {
+    font-size: 2.2rem;
+  }
 }
