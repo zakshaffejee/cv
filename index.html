@@ -1,45 +1,78 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Zakiyyah Haffejee</title>
+
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
-</head>
 
-<body>
+<style>
+:root {
+  --dark: #060D0C;
+  --deep: #3E5954;
+  --sage: #758886;
+  --stone: #C6C2BB;
+  --light: #F0EDE5;
+}
 
-<nav>
-  <div><strong>Zakiyyah Haffejee</strong></div>
-  <div>
-    <a href="index.html">Home</a>
-    <a href="experience.html">Experience</a>
-  </div>
-</nav>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
 
-<section class="hero">
-  <h1>Pharmacist Intern</h1>
-  <p>
-    Curious, structured and systems-driven pharmacist intern with clinical 
-    and operational experience across governance, antimicrobial stewardship, 
-    and stock optimisation. Interested in bridging clinical understanding 
-    with structured pharmaceutical environments.
-  </p>
-  <a href="#" class="button">Download CV</a>
-</section>
+body {
+  background: var(--light);
+  color: var(--dark);
+  overflow-x: hidden;
+}
 
-<section>
-  <h2 style="color: #2A4D88;">My Journey</h2>
-  <p>
-    My experience has evolved from clinical foundations and retail pharmacy 
-    exposure into governance-focused hospital systems and structured operational 
-    processes. Each stage has strengthened my understanding of compliance, 
-    documentation, and system integrity.
-  </p>
-</section>
+nav {
+  position: fixed;
+  width: 100%;
+  padding: 20px 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(240,237,229,0.85);
+  backdrop-filter: blur(8px);
+  z-index: 1000;
+}
 
-<footer>
-  © 2026 Zakiyyah Haffejee
-</footer>
+nav a {
+  text-decoration: none;
+  color: var(--deep);
+  margin-left: 25px;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
 
-</body>
-</html>
+nav a:hover {
+  color: var(--dark);
+}
+
+.hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 0 8%;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-content {
+  max-width: 650px;
+  position: relative;
+  z-index: 2;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  font-weight: 600;
+  color: var(--dark);
+}
+
+.hero h2 {
+  font-weight: 400
