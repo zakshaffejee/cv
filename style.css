@@ -1,9 +1,9 @@
 :root {
-  --primary: #863D28;
-  --orange: #C2613A;
-  --nude: #CE9777;
+  --primary: #2A4D88;
+  --soft-blue: #7C94B8;
+  --light-bg: #D9D9D8;
   --muted: #B1BBC8;
-  --text: #3A2119;
+  --text: #1f1f1f;
 }
 
 * {
@@ -14,7 +14,7 @@
 }
 
 body {
-  background: var(--nude);
+  background: var(--light-bg);
   color: var(--text);
   line-height: 1.7;
 }
@@ -35,7 +35,7 @@ nav a {
 }
 
 nav a:hover {
-  color: var(--orange);
+  color: var(--soft-blue);
 }
 
 section {
@@ -64,3 +64,48 @@ section {
   padding: 12px 30px;
   background: var(--primary);
   color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: 0.3s ease;
+}
+
+.button:hover {
+  background: var(--soft-blue);
+}
+
+.timeline {
+  border-left: 3px solid var(--primary);
+  padding-left: 30px;
+}
+
+.timeline-item {
+  margin-bottom: 40px;
+}
+
+.accordion {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.accordion:hover {
+  background: var(--muted);
+}
+
+.panel {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease;
+  background: #ffffff;
+  padding: 0 20px;
+  border-radius: 0 0 8px 8px;
+}
+
+footer {
+  text-align: center;
+  padding: 40px;
+  background: white;
+  color: var(--primary);
+}
