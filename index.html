@@ -2,11 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Zakiyyah Haffejee | Pharmacist</title>
+    <title>Zakiyyah Haffejee | Pharmacist Intern</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 
     <!-- Main CSS -->
     <link rel="stylesheet" href="style.css">
@@ -14,7 +14,7 @@
 
 <body>
 
-<!-- ================= NAVIGATION ================= -->
+<!-- ================= NAVBAR ================= -->
 
 <nav>
     <div><strong>Zakiyyah Haffejee</strong></div>
@@ -22,80 +22,153 @@
         <a href="index.html">Home</a>
         <a href="experience.html">Experience</a>
         <a href="skills.html">Skills</a>
+        <a href="certifications.html">Certifications</a>
         <a href="contact.html">Contact</a>
     </div>
 </nav>
 
-<!-- ================= HERO SECTION ================= -->
+<!-- ================= HERO (PARALLAX) ================= -->
 
 <section class="hero">
-    <div>
-        <h1>Pharmacist Intern</h1>
+    <div class="hero-content">
+        <h1>Structured Mind.<br>Compassionate Practice.</h1>
         <p>
-            Structured. Analytical. Creative.
-            A developing healthcare professional with strong clinical grounding,
-            operational experience, and a growing interest in pharmaceutical manufacturing and systems optimisation.
+            Pharmacist Intern with hospital-based clinical exposure,
+            operational systems experience, and a developing interest in
+            pharmaceutical manufacturing and regulatory frameworks.
         </p>
+        <a href="experience.html" class="btn">Explore My Experience</a>
     </div>
 </section>
 
 <!-- ================= ABOUT SECTION ================= -->
 
-<section>
-    <h2 class="section-title">About Me</h2>
+<section class="fade-in">
+    <h2>About Me</h2>
+    <div class="section-divider"></div>
 
-    <p style="max-width: 700px;">
-        I am a pharmacist intern with experience in hospital operations,
-        stock management, dispensing, and multidisciplinary collaboration.
-        My approach combines structure and creativity — ensuring systems work
-        efficiently while maintaining patient-centred care.
+    <p style="max-width:750px;">
+        I am currently completing my pharmacist internship at Lenmed Mooimed Hospital,
+        where I am actively involved in dispensing, Schedule 6 management,
+        ward stock control, invoice capturing, and compliance monitoring.
+        My daily practice integrates clinical decision-making with structured operational systems.
     </p>
 
-    <p style="margin-top: 20px; max-width: 700px;">
-        I am particularly interested in pharmaceutical manufacturing,
-        operational optimisation, and quality-driven environments where
-        precision and process matter.
+    <p style="max-width:750px;">
+        I am particularly drawn to environments where systems, precision,
+        and quality intersect — whether within hospital pharmacy,
+        pharmaceutical manufacturing, or regulatory governance.
     </p>
 </section>
 
-<!-- ================= QUICK OVERVIEW ================= -->
+<!-- ================= CORE AREAS ================= -->
 
-<section>
-    <h2 class="section-title">Core Focus Areas</h2>
+<section class="fade-in">
+    <h2>Core Focus Areas</h2>
+    <div class="section-divider"></div>
 
-    <div class="skills-grid">
-        <div class="skill-card">
-            <h3>Clinical & Hospital Practice</h3>
+    <div class="grid">
+
+        <div class="card">
+            <h3>Clinical Practice</h3>
             <p>
-                Dispensing, schedule drug management,
-                medication review, and patient-centred pharmaceutical care.
+                Dispensing accuracy, medication review,
+                antimicrobial stewardship awareness,
+                and Schedule drug compliance management.
             </p>
         </div>
 
-        <div class="skill-card">
-            <h3>Operations & Systems</h3>
+        <div class="card">
+            <h3>Operational Systems</h3>
             <p>
-                Inventory control, stock reconciliation,
-                workflow improvement, and pharmacy system utilisation.
+                Stock audits, discrepancy investigation,
+                invoice reconciliation, workflow optimisation,
+                and pharmacy systems utilisation.
             </p>
         </div>
 
-        <div class="skill-card">
+        <div class="card">
             <h3>Manufacturing Interest</h3>
             <p>
-                Strong curiosity toward pharmaceutical production,
-                quality control, regulatory frameworks,
-                and process optimisation.
+                Exposure to GMP principles,
+                pharmaceutical production workflows,
+                regulatory compliance, and quality control systems.
             </p>
         </div>
+
     </div>
+</section>
+
+<!-- ================= PROFESSIONAL VALUES ================= -->
+
+<section class="fade-in">
+    <h2>Professional Values</h2>
+    <div class="section-divider"></div>
+
+    <div class="grid">
+
+        <div class="card">
+            <h3>Precision</h3>
+            <p>Accuracy in dispensing, documentation, and compliance oversight.</p>
+        </div>
+
+        <div class="card">
+            <h3>Structure</h3>
+            <p>Systematic thinking in inventory management and workflow processes.</p>
+        </div>
+
+        <div class="card">
+            <h3>Growth</h3>
+            <p>Continuous learning through clinical training, manufacturing exposure, and professional development.</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- ================= CALL TO ACTION ================= -->
+
+<section class="fade-in" style="text-align:center;">
+    <h2>Let’s Connect</h2>
+    <div class="section-divider" style="margin:auto;"></div>
+
+    <p>
+        Open to opportunities in hospital pharmacy,
+        pharmaceutical manufacturing, and systems-driven environments.
+    </p>
+
+    <a href="contact.html" class="btn">Contact Me</a>
 </section>
 
 <!-- ================= FOOTER ================= -->
 
 <footer>
-    © 2026 Zakiyyah Haffejee | Built with structure & intention
+    © 2026 Zakiyyah Haffejee | Structured with intention
 </footer>
+
+<!-- ================= SCROLL ANIMATION SCRIPT ================= -->
+
+<script>
+const faders = document.querySelectorAll('.fade-in');
+
+const appearOptions = {
+  threshold: 0.2
+};
+
+const appearOnScroll = new IntersectionObserver(function(entries, observer) {
+  entries.forEach(entry => {
+    if (!entry.isIntersecting) {
+      return;
+    } else {
+      entry.target.classList.add('visible');
+      observer.unobserve(entry.target);
+    }
+  });
+}, appearOptions);
+
+faders.forEach(fader => {
+  appearOnScroll.observe(fader);
+});
+</script>
 
 </body>
 </html>
