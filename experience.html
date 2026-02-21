@@ -4,188 +4,221 @@
     <meta charset="UTF-8">
     <title>Experience | Zakiyyah Haffejee</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    
-    <!-- Main Stylesheet -->
+    <meta name="description" content="Professional experience of Zakiyyah Haffejee, Pharmacist Intern at Lenmed Mooimed Hospital.">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Main CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<!-- ================= NAVIGATION ================= -->
+<!-- ================= NAVBAR ================= -->
 
 <nav>
-    <div><strong>Zakiyyah Haffejee</strong></div>
-    <div>
+    <a href="index.html" class="logo">Zakiyyah Haffejee</a>
+    <div class="nav-links">
         <a href="index.html">Home</a>
-        <a href="experience.html">Experience</a>
+        <a href="experience.html" class="active">Experience</a>
         <a href="skills.html">Skills</a>
-        <a href="contact.html">Contact</a>
+        <a href="initiatives.html">Initiatives</a>
     </div>
+    <button class="hamburger" aria-label="Toggle navigation menu" onclick="toggleMobileNav()">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
 </nav>
 
+<!-- Mobile Nav Overlay -->
+<div class="mobile-nav-overlay" id="mobileNav">
+    <a href="index.html" onclick="toggleMobileNav()">Home</a>
+    <a href="experience.html" onclick="toggleMobileNav()">Experience</a>
+    <a href="skills.html" onclick="toggleMobileNav()">Skills</a>
+    <a href="initiatives.html" onclick="toggleMobileNav()">Initiatives</a>
+</div>
+
+<!-- ================= PAGE HEADER ================= -->
+
+<div class="page-header">
+    <span class="section-label">Professional Journey</span>
+    <h1>Experience & Training</h1>
+    <p>A record of clinical practice, operational systems work, and professional development throughout my pharmacy career.</p>
+</div>
 
 <!-- ================= EXPERIENCE SECTION ================= -->
 
-<section style="margin-top:100px;">
-    <h2 class="section-title">Professional Experience</h2>
+<section style="padding-top: 40px;">
+    <div class="experience-list">
 
-    <!-- ========== LENMED MOOIMED ========== -->
+        <!-- ========== LENMED MOOIMED ========== -->
+        <div class="accordion-item">
+            <div class="accordion-header">
+                <span>Lenmed Mooimed Hospital &mdash; Pharmacist Intern (2025 &ndash; Current)</span>
+                <span>+</span>
+            </div>
+            <div class="accordion-content">
+                <div class="accordion-content-inner">
+                    <h4>Clinical & Dispensing Responsibilities</h4>
+                    <ul>
+                        <li>Dispensing hospital and ward prescriptions with accuracy and regulatory compliance.</li>
+                        <li>Reviewing medication charts and ensuring appropriate dosing and therapeutic suitability.</li>
+                        <li>Managing Schedule 6 and emergency cupboard stock.</li>
+                        <li>Investigating stock discrepancies and implementing corrective measures.</li>
+                    </ul>
 
-    <div class="accordion-item">
-        <div class="accordion-header">
-            Lenmed Mooimed Hospital — Pharmacist Intern (2025 – Current)
-            <span>+</span>
+                    <h4>Stock & Inventory Management</h4>
+                    <ul>
+                        <li>Receiving, checking, and unpacking pharmaceutical stock.</li>
+                        <li>Capturing invoices and reconciling stock against supplier documentation.</li>
+                        <li>Monitoring minimum and maximum stock levels.</li>
+                        <li>Assisting in stock destruction processes according to regulatory requirements.</li>
+                    </ul>
+
+                    <h4>Operational & Systems Work</h4>
+                    <ul>
+                        <li>Working with ProPharm, Clinic Manager, and Unisolve systems.</li>
+                        <li>Packing surgical and ethical ward orders.</li>
+                        <li>Ensuring compliance with hospital pharmacy standards.</li>
+                    </ul>
+
+                    <h4>Committees & Additional Involvement</h4>
+                    <ul>
+                        <li>Participated in pharmacy operational discussions.</li>
+                        <li>Assisted in improving stock control workflow efficiency.</li>
+                    </ul>
+                </div>
+            </div>
         </div>
 
-        <div class="accordion-content">
+        <!-- ========== CLINICAL ROTATIONS ========== -->
+        <div class="accordion-item">
+            <div class="accordion-header">
+                <span>Clinical Rotations &mdash; 3 Weeks (2024)</span>
+                <span>+</span>
+            </div>
+            <div class="accordion-content">
+                <div class="accordion-content-inner">
+                    <h4>Hospital Exposure</h4>
+                    <ul>
+                        <li>Participated in multidisciplinary ward rounds.</li>
+                        <li>Reviewed patient medication therapy and identified potential drug-related problems.</li>
+                        <li>Provided pharmaceutical recommendations under pharmacist supervision.</li>
+                    </ul>
 
-            <h4>Clinical & Dispensing Responsibilities</h4>
-            <ul>
-                <li>Dispensing hospital and ward prescriptions with accuracy and regulatory compliance.</li>
-                <li>Reviewing medication charts and ensuring appropriate dosing and therapeutic suitability.</li>
-                <li>Managing Schedule 6 and emergency cupboard stock.</li>
-                <li>Investigating stock discrepancies and implementing corrective measures.</li>
-            </ul>
-
-            <h4>Stock & Inventory Management</h4>
-            <ul>
-                <li>Receiving, checking, and unpacking pharmaceutical stock.</li>
-                <li>Capturing invoices and reconciling stock against supplier documentation.</li>
-                <li>Monitoring minimum and maximum stock levels.</li>
-                <li>Assisting in stock destruction processes according to regulatory requirements.</li>
-            </ul>
-
-            <h4>Operational & Systems Work</h4>
-            <ul>
-                <li>Working with ProPharm, Clinic Manager, and Unisolve systems.</li>
-                <li>Packing surgical and ethical ward orders.</li>
-                <li>Ensuring compliance with hospital pharmacy standards.</li>
-            </ul>
-
-            <h4>Committees & Additional Involvement</h4>
-            <ul>
-                <li>Participated in pharmacy operational discussions.</li>
-                <li>Assisted in improving stock control workflow efficiency.</li>
-            </ul>
-
+                    <h4>Therapeutic Focus Areas</h4>
+                    <ul>
+                        <li>Antimicrobial stewardship principles.</li>
+                        <li>TB management and counselling.</li>
+                        <li>Chronic disease therapy optimisation.</li>
+                    </ul>
+                </div>
+            </div>
         </div>
+
+        <!-- ========== TRAINING & CERTIFICATIONS ========== -->
+        <div class="accordion-item">
+            <div class="accordion-header">
+                <span>Professional Training & Certifications</span>
+                <span>+</span>
+            </div>
+            <div class="accordion-content">
+                <div class="accordion-content-inner">
+                    <h4>Industry & Product Training</h4>
+                    <ul>
+                        <li>Monofer training (Acino).</li>
+                        <li>Coloplast stoma care training.</li>
+                    </ul>
+
+                    <h4>Clinical & Technical Training</h4>
+                    <ul>
+                        <li>Parenteral infusion training.</li>
+                        <li>Theatre gases training.</li>
+                        <li>Schedule drug handling and compliance training.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- ========== CAMPAIGNS & OUTREACH ========== -->
+        <div class="accordion-item">
+            <div class="accordion-header">
+                <span>Health Campaigns & Outreach Initiatives</span>
+                <span>+</span>
+            </div>
+            <div class="accordion-content">
+                <div class="accordion-content-inner">
+                    <h4>Public Health Campaigns</h4>
+                    <ul>
+                        <li>Assisted in health awareness campaigns within hospital and academic settings.</li>
+                        <li>Contributed to patient education initiatives.</li>
+                        <li>Engaged with community members on medication adherence and health promotion.</li>
+                    </ul>
+
+                    <h4>Educational Contributions</h4>
+                    <ul>
+                        <li>Prepared and presented a CPD presentation on Tuberculosis for healthcare professionals.</li>
+                        <li>Developed structured learning materials aligned with pharmacist assistant roles.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
     </div>
-
-
-    <!-- ========== CLINICAL ROTATIONS ========== -->
-
-    <div class="accordion-item">
-        <div class="accordion-header">
-            Clinical Rotations — 3 Weeks (2024)
-            <span>+</span>
-        </div>
-
-        <div class="accordion-content">
-
-            <h4>Hospital Exposure</h4>
-            <ul>
-                <li>Participated in multidisciplinary ward rounds.</li>
-                <li>Reviewed patient medication therapy and identified potential drug-related problems.</li>
-                <li>Provided pharmaceutical recommendations under pharmacist supervision.</li>
-            </ul>
-
-            <h4>Therapeutic Focus Areas</h4>
-            <ul>
-                <li>Antimicrobial stewardship principles.</li>
-                <li>TB management and counselling.</li>
-                <li>Chronic disease therapy optimisation.</li>
-            </ul>
-
-        </div>
-    </div>
-
-
-    <!-- ========== TRAINING & CERTIFICATIONS ========== -->
-
-    <div class="accordion-item">
-        <div class="accordion-header">
-            Professional Training & Certifications
-            <span>+</span>
-        </div>
-
-        <div class="accordion-content">
-
-            <h4>Industry & Product Training</h4>
-            <ul>
-                <li>Monofer training (Acino).</li>
-                <li>Coloplast stoma care training.</li>
-            </ul>
-
-            <h4>Clinical & Technical Training</h4>
-            <ul>
-                <li>Parenteral infusion training.</li>
-                <li>Theatre gases training.</li>
-                <li>Schedule drug handling and compliance training.</li>
-            </ul>
-
-        </div>
-    </div>
-
-
-    <!-- ========== CAMPAIGNS & OUTREACH ========== -->
-
-    <div class="accordion-item">
-        <div class="accordion-header">
-            Health Campaigns & Outreach Initiatives
-            <span>+</span>
-        </div>
-
-        <div class="accordion-content">
-
-            <h4>Public Health Campaigns</h4>
-            <ul>
-                <li>Assisted in health awareness campaigns within hospital and academic settings.</li>
-                <li>Contributed to patient education initiatives.</li>
-                <li>Engaged with community members on medication adherence and health promotion.</li>
-            </ul>
-
-            <h4>Educational Contributions</h4>
-            <ul>
-                <li>Prepared and presented a CPD presentation on Tuberculosis for healthcare professionals.</li>
-                <li>Developed structured learning materials aligned with pharmacist assistant roles.</li>
-            </ul>
-
-        </div>
-    </div>
-
 </section>
-
 
 <!-- ================= FOOTER ================= -->
 
 <footer>
-    © 2026 Zakiyyah Haffejee | Built with structure & intention
+    <p style="margin:0; color: var(--stone);">2026 Zakiyyah Haffejee &mdash; Built with structure & intention</p>
 </footer>
 
-
-<!-- ================= ACCORDION SCRIPT ================= -->
+<!-- ================= SCRIPTS ================= -->
 
 <script>
+// Accordion
 document.querySelectorAll(".accordion-header").forEach(header => {
     header.addEventListener("click", () => {
+        const item = header.parentElement;
         const content = header.nextElementSibling;
+        const icon = header.querySelector("span:last-child");
 
         if (content.style.maxHeight) {
             content.style.maxHeight = null;
             content.classList.remove("open");
+            icon.textContent = "+";
         } else {
+            // Close all others
             document.querySelectorAll(".accordion-content").forEach(c => {
                 c.style.maxHeight = null;
                 c.classList.remove("open");
             });
+            document.querySelectorAll(".accordion-header span:last-child").forEach(i => {
+                i.textContent = "+";
+            });
 
             content.style.maxHeight = content.scrollHeight + "px";
             content.classList.add("open");
+            icon.textContent = "\u2212";
         }
     });
+});
+
+// Mobile nav toggle
+function toggleMobileNav() {
+    const overlay = document.getElementById('mobileNav');
+    const hamburger = document.querySelector('.hamburger');
+    overlay.classList.toggle('open');
+    hamburger.classList.toggle('open');
+    document.body.style.overflow = overlay.classList.contains('open') ? 'hidden' : '';
+}
+
+// Navbar shadow on scroll
+window.addEventListener('scroll', () => {
+    const nav = document.querySelector('nav');
+    nav.style.boxShadow = window.scrollY > 50 ? 'var(--shadow-sm)' : 'none';
 });
 </script>
 
